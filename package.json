@@ -1,0 +1,57 @@
+{
+  "name": "components-library",
+  "version": "1.0.0",
+  "description": "A components library",
+  "engines": {
+    "node": ">=10.17.0"
+  },
+  "engineStrict": true,
+  "main": "index.js",
+  "scripts": {
+    "build:components": "lerna bootstrap && lerna exec npm run \"build\"",
+    "clean:components": "lerna exec npm run \"clean\"",
+    "publish:components": "lerna publish",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addon-actions": "^6.0.13",
+    "@storybook/addon-docs": "^6.0.13",
+    "@storybook/addon-essentials": "^6.0.13",
+    "@storybook/addon-links": "^6.0.13",
+    "@storybook/react": "^6.0.13",
+    "autoprefixer": "9.4.7",
+    "babel-loader": "8.0.5",
+    "cross-env": "5.2.0",
+    "css-loader": "2.1.0",
+    "lerna": "3.13.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "3.0.0",
+    "react-is": "^16.13.1",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.29.3",
+    "webpack-cli": "3.2.3"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@storybook/addon-knobs": "^6.0.13",
+    "@storybook/cli": "6.0.13",
+    "@storybook/theming": "^6.0.13",
+    "core-js": "^3.6.5",
+    "react": "16.8.2",
+    "react-dom": "16.8.2",
+    "styled-components": "^5.0.0"
+  },
+  "resolutions": {
+    "react-treebeard": "3.1.0"
+  },
+  "nohoist": [
+    "**@storybook/**"
+  ]
+}
