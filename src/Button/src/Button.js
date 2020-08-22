@@ -8,7 +8,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const displayName = 'Button';
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
-    <button
+    <div
       data-testid="base-button"
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
@@ -16,7 +16,7 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       {...props}
     >
       {label}
-    </button>
+    </div>
   );
 };
 
