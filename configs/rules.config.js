@@ -28,7 +28,10 @@ const rules = [
             options: {
                 presets: ['@babel/preset-env', '@babel/react',
                 {
-                    'plugins': ['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-react-jsx']
+                    'plugins': [
+                        ["@babel/plugin-proposal-class-properties", { "loose": true }], 
+                        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+                        '@babel/plugin-transform-react-jsx']
                 }]    
             }
         }
