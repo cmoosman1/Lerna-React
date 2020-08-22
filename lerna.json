@@ -3,7 +3,7 @@
     "npmClient": "npm",
     "version": "independent",
     "packages": ["src/**/*"],
-    "registry": "https://skimdb.npmjs.com/registry",
+    "registry": "https://registry.npmjs.org/",
     "command": {
         "publish": {
             "ignoreChanges": ["*.md", "tests/*", "ignored-files"]
