@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export default function Button({ primary, backgroundColor, size, label, ...props }) {
   const displayName = 'Button';
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
