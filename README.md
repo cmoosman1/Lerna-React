@@ -9,7 +9,7 @@
 **Note:** before publishing packages, you must have npm account and setup organization in order to publish scoped packages.
 
 1. Build components by running `npm run build:components` command;
-2. Publish components by running `npm run publish:components` command.
+2. Publish components by running `npm run publish:components` command since last package change.
 
 ## Development
 - Create new component under `src` directory;
