@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 /**
  * Primary UI component for user interaction
  */
-const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const displayName = 'Button';
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
@@ -50,6 +50,3 @@ Button.defaultProps = {
   label: 'Apply Now',
   onClick: undefined,
 };
-
-export default Button;
-export { Button };
