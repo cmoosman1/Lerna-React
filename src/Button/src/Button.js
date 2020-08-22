@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 /**
  * Primary UI component for user interaction
  */
-function Button ({ primary, backgroundColor, size, label, ...props })  {
+const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+  const displayName = 'Button';
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
@@ -51,3 +52,4 @@ Button.defaultProps = {
 };
 
 export default Button;
+export { Button };
