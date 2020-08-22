@@ -1,7 +1,7 @@
 {
   "name": "@cmoosman/button",
   "description": "Button component",
-  "version": "1..0",
+  "version": null,
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
