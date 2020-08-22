@@ -1,7 +1,7 @@
 {
   "name": "@cmoosman/button",
   "description": "Button component",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -39,5 +39,6 @@
   },
   "dependencies": {
     "@storybook/addon-a11y": "^6.0.13"
-  }
+  },
+  "gitHead": "51188ccc33c05cf4faf4c33977567da9df535f30"
 }
